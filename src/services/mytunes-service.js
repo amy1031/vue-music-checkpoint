@@ -18,7 +18,9 @@ function loadMytunes() {
 loadMytunes()
 
 export default {
-  getTracks() { },
+  getTracks() { 
+    return myTunes
+  },
   addTrack(track) {
     // OCCASIONALLY YOU WILL RUN INTO ISSUES WHERE VUE WILL BE
     // UNAWARE THAT A CHANGE HAS OCCURED TO YOUR DATA

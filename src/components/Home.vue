@@ -1,8 +1,16 @@
 <template>
   <div class="home">
     <!-- YOU WILL PROBABLY END UP WITH SOMETHING LIKE THIS -->
-    <my-tunes class="my-tunes"></my-tunes>
-    <itunes class="itunes"></itunes>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <itunes class="itunes"></itunes>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <mytunes class="mytunes"></mytunes>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,18 +39,14 @@ export default {
 * BOOTSTRAP IS FOR THE WEAK FLEXBOX IS KING
 * -- McCall
 **/
-.my-tunes{
-  display: inline-block;
+.mytunes{
   min-height: 500px;
-  min-width: 45%;
-  background: purple;
+  background: pink;
 }
 
 .itunes{
-  display: inline-block;
   background: orange;
   min-height: 500px;
-  min-width: 45%;
 }
 
 </style>
