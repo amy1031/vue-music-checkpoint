@@ -39,14 +39,14 @@ export default {
 * BOOTSTRAP IS FOR THE WEAK FLEXBOX IS KING
 * -- McCall
 **/
-.mytunes{
+/*.mytunes{
   min-height: 500px;
-  background: pink;
+  background: #a7adba;
 }
 
 .itunes{
-  background: orange;
+  background: #c0c5ce;
   min-height: 500px;
-}
+}*/
 
 </style>
