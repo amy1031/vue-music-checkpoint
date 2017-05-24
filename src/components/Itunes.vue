@@ -42,8 +42,8 @@ export default {
         	this.songs = resObj.results
         	})
     	},
-		addSong(songAdded) {
-        	MyTunes.addTrack(song)
+		addSong(song) {
+        	Mytunes.addTrack(song)
 		}
     }
 }
