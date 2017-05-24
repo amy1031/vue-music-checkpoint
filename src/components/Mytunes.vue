@@ -4,7 +4,11 @@
         <div v-for="song in songs">
         <h3>{{song.trackName}}</h3>
         <h4>{{song.artistName}}</h4>
-        <audio controls><source :src='song.previewUrl'></audio>
+        <audio controls><source :src='song.previewUrl'></audio><br>
+        <button @click="removeTrack(song)">Remove</button>
+        <button @click="promoteTrack(song)">Promote</button>
+        <button @click="demoteTrack(song)">Demote</button>
+        <hr>
         </div>
     </div>
 </template>
@@ -18,10 +22,19 @@ export default {
     return {
         songs: Mytunes.getTracks()
     }
-    
   },
   computed: {},
-  methods: {}
+  methods: {
+        removeTrack(song){
+            Mytunes.removeTrack(song)
+        },
+        promoteTrack(song){
+            Mytunes.promoteTrack(song)
+        },
+        demoteTrack(song){
+            Mytunes.demoteTrack(song)
+        }  
+    }
 }
 </script>
 

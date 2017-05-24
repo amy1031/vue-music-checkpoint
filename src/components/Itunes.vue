@@ -14,7 +14,7 @@
 				<h5>{{song.artistName}}</h5>
 				<h6>{{song.collectionPrice}}</h6>
 				<audio controls><source :src='song.previewUrl'></audio><br>
-				<button type='button' @click="addSong(song)">Add to Playlist</button>
+				<button type='button' @click="addTrack(song)">Add to Playlist</button>
 			</div>
   		</div>
 		</div>
@@ -42,7 +42,8 @@ export default {
         	this.songs = resObj.results
         	})
     	},
-		addSong(song) {
+		addTrack(song) {
+			//debugger
         	Mytunes.addTrack(song)
 		}
     }
